@@ -1,0 +1,129 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.errorstack {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  width: 300px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.errorstack .errors {
+  width: 300px;
+  height: 100px;
+  margin-top: 15px;
+  background-color: rgb(138, 0, 0);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  padding-left: 0px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.errorstack .errors:hover {
+  transform: scale(0.9);
+}
+.errorstack .errors h1 {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(7, 7, 7);
+}
+.container .formsection {
+  width: 400px;
+  height: 500px;
+  background: rgb(0, 0, 0);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container .formsection .register {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.container .formsection .formconetnt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  color: white;
+  padding: 20px;
+  margin-top: -25px;
+}
+.container .formsection .formconetnt h1 {
+  width: 80%;
+  height: 30px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.container .formsection .formconetnt input {
+  width: 75%;
+  height: 30px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 10px;
+  padding-inline: 15px;
+  outline: none;
+  margin-top: -10px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.container .formsection .formconetnt input:hover {
+  border-color: white;
+}
+.container .formsection .formconetnt button {
+  margin-top: 20px;
+  height: 35px;
+  width: 83%;
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.container .formsection .formconetnt button:hover {
+  border: 2px solid gray;
+}
+.container .formsection .formconetnt .createaccountbtn {
+  background: rgb(89, 0, 255);
+  border: none;
+  color: white;
+}
+.container .formsection .formconetnt .createaccountbtn:hover {
+  background: rgb(55, 0, 158);
+  border: none;
+}
+.container .formsection .formconetnt h2 {
+  height: 30px;
+  font-size: 15px;
+  margin-top: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=registerpage.css.map */

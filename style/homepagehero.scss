@@ -1,0 +1,53 @@
+
+@keyframes revealup {
+    0%{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.pagehero {
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: transparent;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .welcometext {
+        width: 600px;
+        font-family: "Roboto";
+        color: white;
+        text-align: center;
+        font-size: 60px;
+        overflow: hidden;
+        div{
+            opacity: 0;
+        }
+         
+    }
+    button{
+        width: 150px;
+        height: 40px;
+        background: rgb(89, 0, 255);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        opacity: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+        &:hover{
+            scale: 1.08;
+        }
+    }
+}
+.animated{
+    overflow: hidden;
+    transform: 1s ease-in-out;
+    transform-origin: bottom;
+    animation: revealup 2s forwards;
+} 

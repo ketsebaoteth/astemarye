@@ -1,0 +1,69 @@
+.faqs {
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    h1 {
+        color: white;
+        font-size: 40px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    details {
+        margin-top: 15px;
+        background-color: rgb(44, 0, 125);
+        color: #fff;
+        font-size: 1.5rem;
+        width: 70%;
+        transition: 1s ease-in-out;
+        border: 2px solid transparent;
+        font-family: "Roboto", sans-serif;
+        border-radius: 15px;
+        padding: 0.5em 1.3rem; /* Add this line */
+        &:hover{
+            border: 2px solid white;
+        }
+        
+        summary {
+            padding: 18px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            /* Remove the height transition */
+        }
+
+        summary::-webkit-details-marker {
+            display: block;
+        }
+
+        summary:after {
+            content: "\002B";
+        }
+
+        [open] summary {
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 0.5em;
+        }
+
+        [open] summary:after {
+            content: "\00D7";
+
+        }
+
+        /* Apply padding directly to the details element */
+        [open] div {
+            padding: 0; /* Remove padding from the div */
+            max-height: 1000px; /* Adjust this value as needed */
+            overflow: hidden;
+            transition: max-height 0.5s ease; /* Animate the max-height change */
+            padding-left: 40px;
+            
+        }
+    }
+}
